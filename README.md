@@ -1,4 +1,3 @@
-# -_-
-<h1>https://jungyuryu.github.io/Piwuda_Competition/</h1>
+https://jungyuryu.github.io/Piwuda_Competition/
 <br/>
-HTML, ML을 이용한 노인 자살 위험도 진단 모델
+<h1>HTML, ML을 이용한 노인 자살 위험도 진단 모델</h1>
