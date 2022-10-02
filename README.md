@@ -2,4 +2,4 @@
 <br/>
 Web Page Link: https://jungyuryu.github.io/Piwuda_Competition/
 <br/>
-Google Colaboratory Link: https://colab.research.google.com/drive/1QON6PAJ5tJ91tKo0pDYGgsoYiiWUUtEB#scrollTo=Yo4ltynWxb_o
+ML Model Google Colaboratory Link: https://colab.research.google.com/drive/1QON6PAJ5tJ91tKo0pDYGgsoYiiWUUtEB
