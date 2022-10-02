@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+	    <title>노인 우울 진단 설문지</title>
+	    <style>
+		    .baseFrm{ 
+                float: left;
+                width: 80px;
+                display: block; 
+                margin-bottom: 10px;;
+              }
+	    </style>	
+    </head>
+    <body>
+        <form name="baseFrm">
+            <label for="name">이름: </label>
+            <input type="text" id="name" name="이름" />
+            <label for="area">거주지역: </label>
+            <input type="text" id="area" name="거주지역" />
+            
+            <input type="button" name="send" value="입력" />
+          </form>	
+        <br>
+        1. 총 가구원 수: 
+        <input type="radio" name="chk_info1" value="1.0">1.0
+        <input type="radio" name="chk_info1" value="2.0">2.0
+        <input type="radio" name="chk_info1" value="3.0">3.0
+        <input type="radio" name="chk_info1" value="4.0">4.0
+        <input type="radio" name="chk_info1" value="5.0">5.0
+        <input type="radio" name="chk_info1" value="6.0">6.0
+        <input type="radio" name="chk_info1" value=">=7.0">>=7.0        
+        <br><br>
+        2. 노인 가구원 수: 
+        <input type="radio" name="chk_info2" value="1.0">1.0
+        <input type="radio" name="chk_info2" value="2.0">2.0
+        <input type="radio" name="chk_info2" value="3.0">3.0
+        <input type="radio" name="chk_info2" value="4.0">4.0
+        <br><br>
+        3. 노인 가구 형태: 
+        <input type="radio" name="chk_info3" value="노인부부가구">노인부부가구
+        <input type="radio" name="chk_info3" value="자녀동거 노인가구">자녀동거 노인가구
+        <input type="radio" name="chk_info3" value="노인독신가구">노인독신가구
+        <input type="radio" name="chk_info3" value="손자녀동거 노인가구">손자녀동거 노인가구
+        <input type="radio" name="chk_info3" value="직계가족동거 노인가구">직계가족동거 노인가구
+        <input type="radio" name="chk_info3" value="친척동거 노인가구">친척동거 노인가구
+        <input type="radio" name="chk_info3" value="비혈연동거 노인가구">비혈연동거 노인가구  
+        <input type="radio" name="chk_info3" value="기타 노인가구">기타 노인가구
+        <br><br>
+        4. 주관적 건강 상태: 
+        <input type="radio" name="chk_info4" value="좋음">좋음
+        <input type="radio" name="chk_info4" value="나쁨">나쁨
+        <br><br>
+        5. 의사 진단 만성질환 총 수: 
+        <input type="radio" name="chk_info5" value="0.0">0.0
+        <input type="radio" name="chk_info5" value="1-3">1-3
+        <input type="radio" name="chk_info5" value=">=4">>=4
+        <br><br>
+        6. 현재 흡연 여부: 
+        <input type="radio" name="chk_info6" value="예(현재 피움)">예(현재 피움)
+        <input type="radio" name="chk_info6" value="아니요">아니요
+        <br><br>
+        7. 평소 음주 여부: 
+        <input type="radio" name="chk_info7" value="예">예
+        <input type="radio" name="chk_info7" value="아니요">아니요
+        <br><br>
+        8. 평소 운동 여부: 
+        <input type="radio" name="chk_info8" value="예">예
+        <input type="radio" name="chk_info8" value="아니요">아니요
+        <br><br>
+        9. 지난 2년 간 건강검진 여부(치매검진 제외): 
+        <input type="radio" name="chk_info9" value="예">예
+        <input type="radio" name="chk_info9" value="아니요">아니요
+        <br><br>
+        10. 일상행활의 불편함 정도_시력: 
+        <input type="radio" name="chk_info10" value="1.0">1.0
+        <input type="radio" name="chk_info10" value="2.0">2.0
+        <input type="radio" name="chk_info10" value="3.0">3.0
+        <br><br>
+        11. 일상행활의 불편함 정도_청력: 
+        <input type="radio" name="chk_info11" value="1.0">1.0
+        <input type="radio" name="chk_info11" value="2.0">2.0
+        <input type="radio" name="chk_info11" value="3.0">3.0
+        <br><br>
+        12. 일상행활의 불편함 정도_치악력:
+        <input type="radio" name="chk_info12" value="1.0">1.0
+        <input type="radio" name="chk_info12" value="2.0">2.0
+        <input type="radio" name="chk_info12" value="3.0">3.0
+        <br><br>
+        13. 일상생활 수행에있어 도움받음 여부: 
+        <input type="radio" name="chk_info13" value="예">예
+        <input type="radio" name="chk_info13" value="아니요">아니요
+        <br><br>
+        14. 노인장기요양보험 등급 신청 경험 유무: 
+        <input type="radio" name="chk_info14" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info14" value="아니요(없다)">아니요(없다)
+        <br><br>
+        15. 종교 여부: 
+        <input type="radio" name="chk_info15" value="있음">있음
+        <input type="radio" name="chk_info15" value="없음">없음
+        <br><br>
+        16. 현재 경제활동 여부: 
+        <input type="radio" name="chk_info16" value="현재 일을 하지 않는다"">현재 일을 하지 않는다
+        <input type="radio" name="chk_info16" value="현재 일을 한다">현재 일을 한다
+        <br><br>
+        17. 노인 일자리 및 사회황동지원사업 참여 경험 유무: 
+        <input type="radio" name="chk_info17" value="있음">있음
+        <input type="radio" name="chk_info17" value="없음">없음
+        <br><br>
+        18. 가깝게 지내는 형제/자매를 포함한 친인척 수
+        <form name="frm">
+            <input type="text" name="chk_info18"  value="예) 1.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        19. 가깝게 지내는 친구/이웃/지인 수
+        <form name="frm">
+            <input type="text" name="chk_info19"  value="예) 1.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        20. 거주형태(가구): 
+        <input type="radio" name="chk_info20" value="자가">자가
+        <input type="radio" name="chk_info20" value="무상">무상
+        <input type="radio" name="chk_info20" value="보증금 있는 월세">보증금 있는 월세
+        <input type="radio" name="chk_info20" value="전세">전세
+        <input type="radio" name="chk_info20" value="보증금 없는 월세">보증금 없는 월세(사글세)
+        <br><br>
+        21. 낙상_지난 1년 간 경험 유무: 
+        <input type="radio" name="chk_info21" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info21" value="아니요(없다)">아니요(없다)
+        <br><br>
+        22. 타인으로부터 신체적 고통을 당함_여부: 
+        <input type="radio" name="chk_info22" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info22" value="아니요(없다)">아니요(없다)
+        <br><br>
+        23. 타인으로 인해 감정을 상함_여부: 
+        <input type="radio" name="chk_info23" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info23" value="아니요(없다)">아니요(없다)
+        <br><br>
+        24. 타인으로부터 금전적 피해를 입음_여부: 
+        <input type="radio" name="chk_info24" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info24" value="아니요(없다)">아니요(없다)
+        <br><br>
+        25. 가족이나 보호자가 돌봐주지 않음_여부: 
+        <input type="radio" name="chk_info25" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info25" value="아니요(없다)">아니요(없다)
+        <br><br>
+        26. 가족이나 보호자의 방임 및 생활비 미지원 여부: 
+        <input type="radio" name="chk_info26" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info26" value="아니요(없다)">아니요(없다)
+        <br><br>
+        27. 만족도_건강상태: 
+        <input type="radio" name="chk_info27" value="1.0">1.0
+        <input type="radio" name="chk_info27" value="2.0">2.0
+        <input type="radio" name="chk_info27" value="3.0">3.0
+        <input type="radio" name="chk_info27" value="4.0">4.0
+        <input type="radio" name="chk_info27" value="5.0">5.0 
+        <br><br>
+        28. 만족도_경제상태: 
+        <input type="radio" name="chk_info28" value="1.0">1.0
+        <input type="radio" name="chk_info28" value="2.0">2.0
+        <input type="radio" name="chk_info28" value="3.0">3.0
+        <input type="radio" name="chk_info28" value="4.0">4.0
+        <input type="radio" name="chk_info28" value="5.0">5.0 
+        <br><br>
+        29. 만족도_사회·여가·문화 활동: 
+        <input type="radio" name="chk_info29" value="1.0">1.0
+        <input type="radio" name="chk_info29" value="2.0">2.0
+        <input type="radio" name="chk_info29" value="3.0">3.0
+        <input type="radio" name="chk_info29" value="4.0">4.0
+        <input type="radio" name="chk_info29" value="5.0">5.0 
+        <br><br>
+        30. 만족도_친구 및 지역사회 관계: 
+        <input type="radio" name="chk_info30" value="1.0">1.0
+        <input type="radio" name="chk_info30" value="2.0">2.0
+        <input type="radio" name="chk_info30" value="3.0">3.0
+        <input type="radio" name="chk_info30" value="4.0">4.0
+        <input type="radio" name="chk_info30" value="5.0">5.0 
+        <br><br>
+        31. 일상생활 차별 경험 유무: 
+        <input type="radio" name="chk_info31" value="있음">있음
+        <input type="radio" name="chk_info31" value="없음">없음
+        <br><br>
+        32. 만 60세 이후 자살 생각: 
+        <input type="radio" name="chk_info32" value="예(있다)">예(있다)
+        <input type="radio" name="chk_info32" value="아니요(없다)">아니요(없다)
+        <br><br>
+        33. 인지기능 총점
+        <form name="frm">
+            <input type="text" name="chk_info33"  value="1.0 ~ 30.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        34. 국민기초생활보장수급자 또는 의료급여수급자 여부: 
+        <input type="radio" name="chk_info34" value="예">예
+        <input type="radio" name="chk_info34" value="아니요">아니요
+        <br><br>
+        35. 본인 총 수입액_금액(단위: 만원)
+        <form name="frm">
+            <input type="text" name="chk_info35"  value="예) 50.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        36. 작년 한 해 월평균 소비지출액(가구)(단위: 만원)
+        <form name="frm">
+            <input type="text" name="chk_info36"  value="예) 60.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        37. 부채 금액(단위: 만원)
+        <form name="frm">
+            <input type="text" name="chk_info37"  value="예) 0.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+        38. 주택 종류: 
+        <input type="radio" name="chk_info38" value="단독주택">단독주택
+        <input type="radio" name="chk_info38" value="아파트">아파트
+        <input type="radio" name="chk_info38" value="연립ㆍ다세대 주택">연립ㆍ다세대 주택
+        <input type="radio" name="chk_info38" value="기타">기타
+        <br><br>
+        39. 주거 위치: 
+        <input type="radio" name="chk_info39" value="지상">지상
+        <input type="radio" name="chk_info39" value="지하 또는 반지하">지하 또는 반지하
+        <input type="radio" name="chk_info39" value="반지하">반지하
+        <input type="radio" name="chk_info39" value="지하">지하
+        <input type="radio" name="chk_info39" value="옥탑">옥탑
+        <br><br>
+        40. 노인 조사 대상자 성별: 
+        <input type="radio" name="chk_info40" value="여자">여자
+        <input type="radio" name="chk_info40" value="남자">남자
+        <br><br>
+        41. 노인 조사 대상자 만연령: 
+        <input type="radio" name="chk_info41" value="65-69">65-69
+        <input type="radio" name="chk_info41" value="70-74">70-74
+        <input type="radio" name="chk_info41" value="75-79">75-79
+        <input type="radio" name="chk_info41" value="80-84">80-84
+        <input type="radio" name="chk_info41" value="85이상">85이상
+        <br><br>
+        42. 노인 조사 대상자 교육수준: 
+        <input type="radio" name="chk_info42" value="무학">무학
+        <input type="radio" name="chk_info42" value="초등학교">초등학교
+        <input type="radio" name="chk_info42" value="중학교">중학교
+        <input type="radio" name="chk_info42" value="고등학교">고등학교
+        <input type="radio" name="chk_info42" value="대학교 이상">대학교 이상
+        <br><br>
+        43. 우울증척도: 
+        <input type="radio" name="chk_info43" value="정상">정상
+        <input type="radio" name="chk_info43" value="경중우울도, 상담 불필요">경중우울도, 상담 불필요
+        <input type="radio" name="chk_info43" value="중증우울도, 상담 필요">중증우울도, 상담 필요
+        <input type="radio" name="chk_info43" value="경중우울도, 상담 필요">경중우울도, 상담 필요
+        <br><br>
+        44. 영양관리: 
+        <input type="radio" name="chk_info44" value="영양상태 양호함">영양상태 양호함
+        <input type="radio" name="chk_info44" value="영양관리요함">영양관리요함
+        <br><br>
+        45. 지난 1년 간 여가문화활동 여부: 
+        <input type="radio" name="chk_info45" value="예">예
+        <input type="radio" name="chk_info45" value="아니요">아니요
+        <br><br>
+        46. 지난 1년 간 여가문화시설 이용 여부: 
+        <input type="radio" name="chk_info46" value="예">이용경험 있음
+        <input type="radio" name="chk_info46" value="아니요">이용경험 없음
+        <br><br>
+        47. 지난 1년 간 범죄피해 정도: 
+        <input type="radio" name="chk_info47" value="0">0
+        <input type="radio" name="chk_info47" value="1">1
+        <input type="radio" name="chk_info47" value="2">2
+        <input type="radio" name="chk_info47" value="3">3
+        <input type="radio" name="chk_info47" value="4">4 
+        <br><br>
+        48. 자산 금액(단위: 만원)
+        <form name="frm">
+            <input type="text" name="chk_info48"  value="예) 0.0"/>
+            <input type="button" onclick="put_text()" value="입력" />
+          </form>
+        <br>
+    </body>
+</html>
